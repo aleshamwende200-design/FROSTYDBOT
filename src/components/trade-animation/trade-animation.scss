@@ -80,24 +80,24 @@
         height: 100% !important;
         border-start-end-radius: 0 !important;
         border-end-end-radius: 0 !important;
-        background: linear-gradient(135deg, #c9a227 0%, #e8c040 50%, #c9a227 100%) !important;
+        background: linear-gradient(135deg, #9C6629 0%, #D3A255 50%, #9C6629 100%) !important;
         background-size: 200% auto !important;
         border: none !important;
-        box-shadow: 0 2px 10px rgba(201, 162, 39, 0.45) !important;
+        box-shadow: 0 2px 10px rgba(211, 162, 85, 0.45) !important;
         transition: background-position 0.4s ease, box-shadow 0.2s ease !important;
 
         span {
-            color: #1a1200 !important;
+            color: #1a0e00 !important;
             font-weight: 700 !important;
         }
 
         svg path {
-            fill: #1a1200 !important;
+            fill: #1a0e00 !important;
         }
 
         &:hover {
             background-position: right center !important;
-            box-shadow: 0 4px 18px rgba(201, 162, 39, 0.7) !important;
+            box-shadow: 0 4px 18px rgba(211, 162, 85, 0.7) !important;
         }
     }
 
@@ -108,7 +108,7 @@
         border-end-end-radius: 0 !important;
         background: linear-gradient(135deg, #8b2500 0%, #c0390a 50%, #8b2500 100%) !important;
         background-size: 200% auto !important;
-        border: 1.5px solid rgba(201, 162, 39, 0.5) !important;
+        border: 1.5px solid rgba(211, 162, 85, 0.5) !important;
         box-shadow: 0 2px 10px rgba(192, 57, 10, 0.4) !important;
         transition: background-position 0.4s ease, box-shadow 0.2s ease !important;
 

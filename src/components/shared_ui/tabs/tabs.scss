@@ -109,7 +109,7 @@
             position: relative;
 
             &:after {
-                border-bottom: 2px solid #c9a227;
+                border-bottom: 2px solid #D3A255;
                 content: '';
                 position: absolute;
                 left: 0;
@@ -142,7 +142,7 @@
 
         /* rtl:end:ignore */
         height: 2px;
-        background: linear-gradient(90deg, #c9a227, #ffe066, #c9a227);
+        background: linear-gradient(90deg, #9C6629, #D3A255, #CFC0A3, #D3A255, #9C6629);
         background-size: 200% auto;
         animation: tab-gold-shimmer 2s linear infinite;
         transition: all ease-in-out 0.3s;

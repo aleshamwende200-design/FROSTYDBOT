@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(160deg, #0d0d0d 0%, #1a1200 60%, #0d0d0d 100%);
+    background: linear-gradient(160deg, #0d0d0d 0%, #1a0e00 60%, #0d0d0d 100%);
 
     &__card {
         display: flex;
@@ -20,7 +20,7 @@
         height: 90px;
         border-radius: 50%;
         object-fit: contain;
-        box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.4), 0 0 40px rgba(201, 162, 39, 0.25);
+        box-shadow: 0 0 0 3px rgba(156, 102, 41, 0.4), 0 0 40px rgba(211, 162, 85, 0.25);
         animation: frosty-logo-pulse 2s ease-in-out infinite alternate;
     }
 
@@ -33,7 +33,7 @@
 
         &__char {
             display: inline-block;
-            background: linear-gradient(135deg, #c9a227 0%, #ffe066 40%, #fff5a0 60%, #c9a227 100%);
+            background: linear-gradient(135deg, #9C6629 0%, #D3A255 40%, #CFC0A3 60%, #9C6629 100%);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -53,14 +53,14 @@
     &__bar {
         height: 100%;
         border-radius: 4px;
-        background: linear-gradient(90deg, #c9a227, #ffe066, #c9a227);
-        background-size: 200% 100%;
+        background: linear-gradient(90deg, #9C6629, #D3A255, #CFC0A3, #D3A255, #9C6629);
+        background-size: 300% 100%;
         animation: frosty-bar-slide 1.6s ease-in-out infinite;
     }
 
     &__message {
         font-size: 1.3rem;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(207, 192, 163, 0.6);
         letter-spacing: 0.04em;
         margin: 0;
     }
@@ -68,11 +68,11 @@
 
 @keyframes frosty-logo-pulse {
     0% {
-        box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.3), 0 0 30px rgba(201, 162, 39, 0.15);
+        box-shadow: 0 0 0 3px rgba(156, 102, 41, 0.3), 0 0 30px rgba(211, 162, 85, 0.15);
         transform: scale(1);
     }
     100% {
-        box-shadow: 0 0 0 5px rgba(201, 162, 39, 0.55), 0 0 55px rgba(201, 162, 39, 0.4);
+        box-shadow: 0 0 0 5px rgba(211, 162, 85, 0.55), 0 0 55px rgba(211, 162, 85, 0.4);
         transform: scale(1.04);
     }
 }
@@ -84,8 +84,8 @@
 }
 
 @keyframes frosty-char-pulse {
-    0%   { filter: drop-shadow(0 0 2px rgba(201, 162, 39, 0.4)); }
-    100% { filter: drop-shadow(0 0 10px rgba(255, 224, 102, 1)); }
+    0%   { filter: drop-shadow(0 0 2px rgba(156, 102, 41, 0.4)); }
+    100% { filter: drop-shadow(0 0 10px rgba(211, 162, 85, 1)); }
 }
 
 @keyframes frosty-bar-slide {

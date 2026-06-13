@@ -279,46 +279,46 @@
     align-items: center;
     gap: 0.8rem;
 
-    /* Log in — gold outline ghost */
+    /* Log in — logo gold outline ghost */
     button:first-child {
         font-weight: 600;
         margin-inline-end: 0;
         background: transparent !important;
-        border: 1.5px solid #c9a227 !important;
-        color: #c9a227 !important;
+        border: 1.5px solid #D3A255 !important;
+        color: #D3A255 !important;
         border-radius: 6px !important;
         padding: 0.6rem 1.6rem !important;
         transition: background 0.2s ease, color 0.2s ease;
 
         span {
-            color: #c9a227 !important;
+            color: #D3A255 !important;
         }
 
         &:hover {
-            background: rgba(201, 162, 39, 0.12) !important;
+            background: rgba(211, 162, 85, 0.12) !important;
         }
     }
 
-    /* Sign up — solid gold */
+    /* Sign up — solid logo gold */
     button:last-child {
         font-weight: 700;
         margin-inline-end: 0;
-        background: linear-gradient(135deg, #c9a227 0%, #e8c040 50%, #c9a227 100%) !important;
+        background: linear-gradient(135deg, #9C6629 0%, #D3A255 50%, #9C6629 100%) !important;
         background-size: 200% auto !important;
         border: none !important;
         border-radius: 6px !important;
-        color: #1a1200 !important;
+        color: #1a0e00 !important;
         padding: 0.6rem 1.6rem !important;
-        box-shadow: 0 2px 10px rgba(201, 162, 39, 0.4) !important;
+        box-shadow: 0 2px 10px rgba(211, 162, 85, 0.4) !important;
         transition: background-position 0.4s ease, box-shadow 0.2s ease, transform 0.15s ease;
 
         span {
-            color: #1a1200 !important;
+            color: #1a0e00 !important;
         }
 
         &:hover {
             background-position: right center !important;
-            box-shadow: 0 4px 18px rgba(201, 162, 39, 0.65) !important;
+            box-shadow: 0 4px 18px rgba(211, 162, 85, 0.65) !important;
             transform: translateY(-1px);
         }
 
