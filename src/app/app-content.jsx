@@ -215,31 +215,40 @@ const AppContent = observer(() => {
                 });
         };
 
+        // Always show dashboard within 2.5s regardless of active symbols status
+        const dashboardBailout = setTimeout(() => {
+            setIsLoading(false);
+        }, 2500);
+
         if (ApiHelpers?.instance?.active_symbols) {
             retrieveActiveSymbols();
+            clearTimeout(dashboardBailout);
         } else {
             // This is a workaround to fix the issue where the active symbols are not loaded immediately
             // when the API is initialized. Should be replaced with RxJS pubsub
             const intervalId = setInterval(() => {
                 if (ApiHelpers?.instance?.active_symbols) {
                     clearInterval(intervalId);
+                    clearTimeout(dashboardBailout);
                     retrieveActiveSymbols();
                 } else if (!isOnline) {
                     // If offline, don't wait indefinitely
                     clearInterval(intervalId);
+                    clearTimeout(dashboardBailout);
                     console.log('[Offline] Stopping active symbols wait, showing dashboard');
                     setIsLoading(false);
                 }
-            }, 1000);
+            }, 500);
 
-            // Set a maximum timeout to prevent infinite loading
+            // Hard fallback at 3s
             setTimeout(() => {
                 clearInterval(intervalId);
+                clearTimeout(dashboardBailout);
                 if (is_loading) {
                     console.log('[Timeout] Active symbols loading timeout, showing dashboard');
                     setIsLoading(false);
                 }
-            }, 10000); // 10 second timeout
+            }, 3000);
         }
     };
 
