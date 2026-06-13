@@ -133,10 +133,11 @@ const Chart = observer(({ show_digits_stats }: { show_digits_stats: boolean }) =
         chartSubscriptionIdRef.current = chart_subscription_id;
     }, [chart_subscription_id]);
 
-    // Keep retrying updateSymbol until the workspace or active_symbols provide one
+    // Keep retrying updateSymbol until the workspace or active_symbols provide one.
+    // Once a symbol is set (either from workspace or user selection), stop overwriting it.
     useEffect(() => {
-        updateSymbol();
         if (!symbol) {
+            updateSymbol();
             const retry = setInterval(() => {
                 updateSymbol();
             }, 500);
